@@ -1,0 +1,141 @@
+﻿@model Pizzapan.PresentationLayer.Models.ConfirmViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  
+    <link rel="icon" href="~/argon-dashboard-master/assets/img/brand/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    
+    <link rel="stylesheet" href="~/argon-dashboard-master/assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="~/argon-dashboard-master/assets/vendor/fort-awesome/fontawesome-free/css/all.min.css" type="text/css">
+    
+    <link rel="stylesheet" href="~/argon-dashboard-master/assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+<body class="bg-default">
+    <!-- Navbar -->
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
+            <div class="container">
+                <div class="header-body text-center mb-7">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+                            <h1 class="text-white">Kimlik doğrulama sayfası!</h1>
+                            <p class="text-lead text-white">Lütfen email adresinize gelen 6 haneli kodu giriniz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+        <div class="container mt--8 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-7">
+                    <div class="card bg-secondary border-0 mb-0">
+                        <div class="card-header bg-transparent pb-5">
+                            <div class="card-body px-lg-5 py-lg-5">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <form method="post" asp-action="Index">
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <div class="form-group">
+                                                <label asp-for="UserName" class="control-label"></label>
+                                                <input asp-for="UserName" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="ConfirmCode" class="control-label"></label>
+                                                <input asp-for="ConfirmCode" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" value="Create" class="btn btn-primary" />
+                                            </div>
+                                        </form>
+                                        <div>
+                                            <a asp-action="Index">Listeye Geri dön</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <a href="#" class="text-light"><small>Şifreni mi Unuttun?</small></a>
+                            </div>
+                            <div class="col-6 text-right">
+                                <a href="/Register/Index/" class="text-light"><small>Yeni Hesap Oluştur</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- Argon Scripts -->
+        <!-- Core -->
+        <script src="~/argon-dashboard-master/assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="~/argon-dashboard-master/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/argon-dashboard-master/assets/vendor/js-cookie/js.cookie.js"></script>
+        <script src="~/argon-dashboard-master/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="~/argon-dashboard-master/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+        <!-- Argon JS -->
+        <script src="~/argon-dashboard-master/assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>
+
+@*<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+<h4>Doğrulama Kodu sayfası</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmCode" class="control-label"></label>
+                <input asp-for="ConfirmCode" class="form-control" />
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+*@

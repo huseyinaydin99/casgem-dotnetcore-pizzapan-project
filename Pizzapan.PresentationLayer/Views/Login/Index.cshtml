@@ -1,0 +1,29 @@
+﻿@model LoginViewModel
+@{
+    Layout = "~/Views/Shared/_LoginView.cshtml";
+}
+
+<h2>Giriş Sayfası</h2>
+<form role="form" method="post">
+    <div class="wthree-field">
+        <span class="input-group-text"></span>
+        <input class="form-control" placeholder="Kullanıcı adı" type="text" asp-for="Username">
+    </div>
+
+    <div class="wthree-field">
+        <span class="input-group-text"></span>
+        <input class="form-control" placeholder="Şifre" type="password" asp-for="Password">
+    </div>
+    <div>
+        <input id="customCheckLogin" type="checkbox">
+        <label for="customCheckLogin">
+            <span>Beni Hatırla</span>
+        </label>
+    </div>
+    <div class="wthree-field">
+        <button type="submit" class="btn btn-primary my-4">Giriş Yap</button>
+    </div>
+    <div class="wthree-field">
+        <a href="/Register/Index">Üye Değilsen Üye Ol</a>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+﻿@model OurTeam
+@{
+    ViewData["Title"] = "UpdateOurTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Tayfa Güncelleme Sayfası</h1>
+
+<form method="post">
+    <label>Ad</label>
+    <input type="text" asp-for="Name" class="form-control border" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
+    <label>Soyad</label>
+    <input type="text" asp-for="Surname" class="form-control border" />
+    <span asp-validation-for="Surname" class="text-danger"></span>
+    <br />
+    <label>Başlık</label>
+    <input type="text" asp-for="Title" class="form-control border" />
+    <span asp-validation-for="Title" class="text-danger"></span>
+    <br />
+    <label>Profil Resmi</label>
+    <input type="text" asp-for="ImageUrl" class="form-control border" />
+    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    <br />
+    <button class="btn btn-warning">Ekle</button>
+</form>

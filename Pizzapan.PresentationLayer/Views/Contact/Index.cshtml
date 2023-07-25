@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    @await Component.InvokeAsync("_HeadPartial")
+</head>
+
+<body>
+    
+    @await Component.InvokeAsync("_NavbarPartial")
+    
+    @await Component.InvokeAsync("_ContactPartial")
+    
+    @await Component.InvokeAsync("_FooterPartial")
+
+</body>
+</html>

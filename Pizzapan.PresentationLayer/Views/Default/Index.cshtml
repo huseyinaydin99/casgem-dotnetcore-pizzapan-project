@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+
+    @await Component.InvokeAsync("_NavbarPartial")
+    @await Component.InvokeAsync("_AdminLoginPartial")
+    @await Component.InvokeAsync("_FeaturePartial")
+    @await Component.InvokeAsync("_OfferPartial")
+    @await Component.InvokeAsync("_GalleryPartial")
+    @await Component.InvokeAsync("_ProductPartial")
+    @await Component.InvokeAsync("_TestimonialPartial")
+    @await Component.InvokeAsync("_FooterPartial")
+    @await Component.InvokeAsync("_ScriptPartial")
+
+</body>
+
+</html>

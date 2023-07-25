@@ -1,0 +1,23 @@
+﻿@model RegisterViewModel
+
+@{
+    Layout = "~/Views/Shared/_RegisterView.cshtml";
+}
+
+<form method="post">
+    <input type="text" class="text" asp-for="Name" placeholder="Ad" required="" /><br />
+    <input type="text" class="text" asp-for="Surname" placeholder="Soyad" required="" /><br />
+    <input type="text" class="text" asp-for="Username" placeholder="Kullanıcı Adı" required="" />
+    <input type="email" class="text email" asp-for="Email" placeholder="E-posta Adresi" required="" />
+    <input type="password" class="text w3lpass" asp-for="Password" placeholder="Parola" required="" />
+    <input type="password" class="text w3lpass" asp-for="ConfirmPassword" placeholder="Parola Tekrarı" required="" />
+    <div class="wthree-text">
+        <label class="anim">
+            <input type="checkbox" class="checkbox" required="">
+            <span>Anlaşmayı kabul ediyorum.</span>
+        </label>
+        <div class="clear"> </div>
+    </div>
+    <input type="submit" value="Giriş Yap">
+    
+</form>

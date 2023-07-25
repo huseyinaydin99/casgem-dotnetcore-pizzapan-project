@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="modal-body">
+                <div class="modal__content">
+                    <h2 class="logo"> <span class="fa fa-pie-chart"></span> Pizza Pan</h2>
+                    <!-- if logo is image enable this
+                    <h2 class="logo">
+                      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                    </h2> -->
+
+                    <p class="mt-md-3 mt-2">Ekibimize katılmak ister misiniz?.</p>
+                    <img src="~/pizzapan-starter/assets/images/p1.jpg" alt="image" class="img-fluid radius-image mt-4">
+                    <div class="widget-social-icons mt-sm-5 mt-4">
+                        <h5 class="widget-title">Bizimle İletişime Geçin</h5>
+                        <ul class="icon-rounded address">
+                            <li>
+                                <p>NiğYork Yenice Mahallesi Lütfi Soylu Sok.</p>
+                            </li>
+                            <li class="mt-3">
+                                <p><span class="fa fa-phone"></span> <a href="tel:+404-11-22-89">05345438866</a></p>
+                            </li>
+                            <li class="mt-2">
+                                <p>
+                                    <span class="fa fa-envelope"></span> <a href="mailto:pizza@order.com">huseyinaydin99@gmail.com</a>
+                                </p>
+                            </li>
+                            <li class="top_li1 mt-2">
+                                <p>
+                                    <span class="fa fa-clock-o"></span> <a href="#url">
+                                        @DateTime.Now
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <br />
+                    <li class="px-4 fill-none">
+                        <a href="/Login/Index/" class="btn btn-style btn-secondary">Personel Girişi</a>
+                    </li>
+                    @*<a class="button" style="color:indianred" href="/Login/Index/">Personel Girişi</a>*@
+                </div>
+            </div>
+        </div>
+        <!-- //modal-content -->
+    </div>
+    <!-- //modal-dialog -->
+</div>

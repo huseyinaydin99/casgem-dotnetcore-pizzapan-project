@@ -1,0 +1,24 @@
+﻿@model List<ProductImage>
+<section class="w3l-portfolio-8 py-5">
+    <div class="portfolio-main py-lg-5 py-md-4">
+        <div class="container">
+            <div class="title-content text-center">
+                <h6 class="sub-title">Gallery</h6>
+                <h3 class="title-big">Pizza Gallery</h3>
+            </div>
+            <div class="row galler-top mt-lg-5 mt-4">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 col-6 protfolio-item hover14 align-self">
+                        <a href="~/pizzapan-starter/assets/images/g6.jpg" data-lightbox="example-set"
+                           data-title="lorem ipsum dolor sit amet">
+                            <figure>
+                                <img src="@item.ImageUrl" alt="product" class="img-fluid radius-image">
+                            </figure>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

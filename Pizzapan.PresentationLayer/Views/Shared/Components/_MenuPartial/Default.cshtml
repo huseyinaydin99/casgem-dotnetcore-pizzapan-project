@@ -1,0 +1,50 @@
+﻿@model List<Category>
+
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="#url">Ana Sayfa</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Menü</li>
+        </ul>
+    </div>
+</section>
+
+<div class="agileits-services  py-5" id="menu">
+    <div class="container py-md-5">
+        <div class="title-content text-center">
+            <h6 class="sub-title">Özel Menülerimiz</h6>
+            <h3 class="title-big">Sizin için seçtiklerimiz</h3>
+        </div>
+        <div class="pt-lg-5 pt-4">
+            <div class="row menu-body">
+                @foreach (var item in Model)
+                {
+                    <!-- Section starts: Appetizers -->
+                    <div class="col-lg-6 menu-section pr-lg-5">
+
+                        <h3 class="menu-section-title">@item.CategoryName</h3>
+                        @foreach (var item2 in item.Products)
+                        {
+                            <div class="menu-item">
+                                <div class="row border-dot no-gutters">
+                                    <div class="col-8 menu-item-name">
+                                        <h6>@item2.Name</h6>
+                                    </div>
+                                    <div class="col-4 menu-item-price text-right">
+                                        <h6>@item2.Price</h6>
+                                    </div>
+                                </div>
+                                <div class="menu-item-description">
+                                    <p>@item2.Description</p>
+                                </div>
+                            </div>
+                        }
+                        <!-- Item ends -->
+                        <!-- Item starts -->
+                        <!-- Item ends -->
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
