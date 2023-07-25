@@ -1,0 +1,29 @@
+﻿@model PizzaPan.EntityLayer.Concrete.Testimonial
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+<h2>Ürün Güncelleme Sayfası</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.TestimonialId)
+    @Html.Label("Ürün Adı")
+    @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Ürün Açıklaması")
+    @Html.TextBoxFor(x => x.CustomerTitle, new { @class = "form-control" })
+    <br />
+    @Html.Label("Ürün Resmi")
+    @Html.TextBoxFor(x => x.Comment, new { @class = "form-control" })
+    <br />
+    @Html.Label("Ürün Fiyatı")
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+ 
+
+
+    <button class="btn btn-success">Kategoriyi Güncelle</button>
+</form>

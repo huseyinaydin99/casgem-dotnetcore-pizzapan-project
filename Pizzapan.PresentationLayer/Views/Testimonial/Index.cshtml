@@ -1,0 +1,32 @@
+﻿@model List<PizzaPan.EntityLayer.Concrete.Testimonial>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Tanık İsmi </th>
+        <th>Tanık Açıklaması </th>
+        <th>Tanık Resmi </th>
+        <th>Tanık Fiyatı </th>
+        <th>Tanık Reesmi </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TestimonialId</td>
+            <td>@item.CustomerName</td>
+            <td>@item.CustomerTitle</td>
+            <td>@item.Comment</td>
+            <td>@item.ImageUrl</td>
+            <td><a href="/Testimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Testimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Testimonial/AddTestimonial" class="btn btn-primary"></a>
