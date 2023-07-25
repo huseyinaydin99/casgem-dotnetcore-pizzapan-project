@@ -2,7 +2,7 @@
 
 # CasgemCoreProject-master
 ### ÇASGEM Pizzapan Pizzacı Web projesi.
-Kullanılan teknikler ve teknolojiler; ASP.NET MVC 6.0 - MSQLServer - ORM - EntityFramework - dosya işlemleri - IoC - DI - NTier Architechture - Identity - Linq.
+Kullanılan teknikler ve teknolojiler; ASP.NET MVC 6.0 - MSSQLServer - ORM - EntityFramework - dosya işlemleri - IoC - DI - NTier Architechture - Identity - Linq.
 ### Kullanılan arayüzler; Home Page - Admin Layout - Register - Login - ConfirmCode.
 
 
